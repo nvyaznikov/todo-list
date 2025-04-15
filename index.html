@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="">ToDo List</a>
+            </div>
+            <div class="header_options">
+                <div class="switch">
+                    <div class="switch_btn"></div>
+                </div>
+                
+                <div class="button header_add_task">Добавить задачу</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- All tasks -->
+    <section class="all_tasks">
+        <div class="container indent">
+            <h2>Мои задачи</h2>
+            <div class="tasks">
+
+                <div class="task">
+                    <div class="task_check"></div>
+                    <h3 class="task_heading">Купить мандарины</h3>
+                    <div class="task_date task_date_start">10 декабря 2023 г.</div>
+                    <div class="task_date task_date_end">20 декабря 2023 г.</div>
+                    <div class="task_edit"></div>
+                    <div class="task_delete"></div>
+                </div>
+
+                <div class="task done">
+                    <div class="task_check"></div>
+                    <h3 class="task_heading">Прочитать 10 страниц</h3>
+                    <div class="task_date task_date_start">10 декабря 2023 г.</div>
+                    <div class="task_date task_date_end">20 декабря 2023 г.</div>
+                    <div class="task_edit"></div>
+                    <div class="task_delete"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 TodoList - список задач. Мы используем cookies для сбора обезличенных персональных данных. Они помогают настраивать рекламу и анализировать трафик. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.</p>
+        </div>
+    </footer>
+
+    <!-- Popup add task -->
+    <div class="popup popup_add_task">
+        <div class="popup_bg popup_close"></div>
+        <div class="popup_content">
+            <h2 class="popup_heading">Добавить задачу</h2>
+            <form class="form_task">
+                <div class="form_row">
+                    <div class="form_col_100">
+                        <label for="task_heading">Название задачи</label>
+                        <input type="text" class="input_task_heading" id="task_heading" placeholder="Название задачи" required>
+                    </div>
+
+                    <div class="form_col_100">
+                        <label for="task_heading">Дата окончания</label>
+                        <input type="date" class="input_task_date_end" id="input_task_date" required>
+                    </div>
+
+                    <button class="button">Добавить задачу</button>
+                </div>
+            </form>
+            <div class="popup_close popup_button_close">
+                <i class="ti ti-x"></i>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Popup edit task -->
+    <div class="popup popup_edit_task">
+        <div class="popup_bg popup_close"></div>
+        <div class="popup_content">
+            <h2 class="popup_heading">Изменить задачу</h2>
+
+            <form class="form_task">
+                <div class="form_row">
+                    <div class="form_col_100">
+                        <label for="task_heading">Название задачи</label>
+                        <input type="text" class="input_task_heading" id="task_heading" required placeholder="Название задачи">
+                    </div>
+
+                    <div class="form_col_50">
+                        <label for="task_heading">Дата начала</label>
+                        <input type="date" class="input_task_date_start" id="input_task_date_start" required>
+                    </div>
+
+                    <div class="form_col_50">
+                        <label for="task_heading">Дата окончания</label>
+                        <input type="date" class="input_task_date_end" id="input_task_date_end" required>
+                    </div>
+
+                    <button class="button">Изменить задачу</button>
+                </div>
+            </form>
+
+            <div class="popup_close popup_button_close">
+                <i class="ti ti-x"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Popup remove task -->
+    <div class="popup popup_delete_task">
+        <div class="popup_bg popup_close"></div>
+        <div class="popup_content">
+            <h2 class="popup_heading">Вы действительно хотите удалить задачу?</h2>
+        
+            <div class="button popup_close">Нет</div>
+            <div class="button_optional">Да</div>
+
+            <div class="popup_close popup_button_close">
+                <i class="ti ti-x"></i>
+            </div>
+
+        </div>
+        
+           
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
