@@ -45,4 +45,5 @@ todo-list/
 ```bash
 
 git clone https://github.com/nvyaznikov/todo-list.git
+cd todo-list
 ```
