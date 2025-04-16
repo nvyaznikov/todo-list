@@ -47,3 +47,5 @@ todo-list/
 git clone https://github.com/nvyaznikov/todo-list.git
 cd todo-list
 ```
+2. Либо перейдите по ссылке: 
+[ToDo-List](https://nvyaznikov.github.io/todo-list/)
