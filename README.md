@@ -1,7 +1,19 @@
 # ToDo-List Vanilla JS 🚀
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-blue?style=flat-square)](https://nvyaznikov.github.io/todo-list/)
 
-![ToDo List Screenshot](img/main.png)
+## 📸 Скриншоты интерфейса
+
+<details>
+<summary>🔍 Развернуть скриншоты</summary>
+
+<div style="display: flex; overflow-x: auto; gap: 10px;">
+  <img src="img/main.png" width="300" alt="Главный экран">
+  <img src="img/add_task.png" width="300" alt="Добавление">
+  <img src="img/change_task.png" width="300" alt="Редактирование">
+  <img src="img/delete_task.png" width="300" alt="Удаление">
+</div>
+
+</details>
 
 Простой менеджер задач.
 
